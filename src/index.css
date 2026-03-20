@@ -1,25 +1,36 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 @font-face {
-  font-family: 'Classic';
-  src: url('./assets/classic-girl/Classic\ Girl\ OTF.otf');
+  font-family: "Classic";
+  src: url("./assets/classic-girl/Classic\ Girl\ OTF.otf");
   font-weight: 700;
   font-style: normal;
 }
 
-
 @theme {
-  --color-olive: #4D6946;
-  --color-cream: #FFF3D5;
-  --color-card: #FFFFFF;
-  --color-text-primary: #2F3E2C;
-  --color-text-secondary: #6B7D6A;
-  --color-border-soft: #E6DCC4;
-  --color-sidebar: #F7EED2;
-  --font-playfair : 'Playfair Display';
-  --font-logo: 'Medium', sans-serif;
-  --font-classic: 'Classic', sans-serif;
+  --color-olive: #4d6946;
+  --color-cream: #fff3d5;
+  --color-card: #ffffff;
+  --color-text-primary: #2f3e2c;
+  --color-text-secondary: #6b7d6a;
+  --color-border-soft: #e6dcc4;
+  --color-sidebar: #f7eed2;
+  --font-playfair: "Playfair Display";
+  --font-logo: "Medium", sans-serif;
+  --font-classic: "Classic", sans-serif;
+}
 
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+:root::-webkit-scrollbar {
+  display: none;
 }
