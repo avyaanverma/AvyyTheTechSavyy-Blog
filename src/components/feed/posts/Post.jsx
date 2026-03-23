@@ -1,7 +1,7 @@
 import React from "react";
 import { RiHandHeartLine, RiChat3Line } from "@remixicon/react";
 
-const Post = ({ title, description, date, likes, comments, image }) => {
+const Post = ({ title, description, date, likes, comments, image, deleteFn }) => {
   return (
     <div className="grid grid-cols-3 gap-4 p-6 bg-white border border-gray-300 rounded-3xl shadow-md w-[80%] mx-auto">
       {/* Content Section */}
