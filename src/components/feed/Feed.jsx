@@ -4,7 +4,9 @@ import defaultPosts from "../../data/data";
 
 const Feed = () => {
   const [posts, setPosts] = useState([]);
-
+  const deleteFunction = (id)=> {
+    console.log(id);
+  }
   useEffect(() => {
     // Load posts from localStorage or use default data
     const storedPosts = localStorage.getItem("blogPosts");
@@ -43,6 +45,7 @@ const Feed = () => {
           likes={post.likes}
           comments={post.comments}
           image={post.image}
+          deleteFn={deleteFunction}
         />
       ))}
     </div>
